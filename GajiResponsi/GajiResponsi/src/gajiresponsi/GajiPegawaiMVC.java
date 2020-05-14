@@ -1,0 +1,17 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package gajiresponsi;
+
+/**
+ *
+ * @author USER
+ */
+public class GajiPegawaiMVC {
+    GajiPegawaiView gajipegawaiview = new GajiPegawaiView();
+    GajiPegawaiDAO gajipegawaidao = new GajiPegawaiDAO();
+    GajiPegawaiModel gajipegawaimodel = new GajiPegawaiModel();
+    GajiPegawaiController gajipegawaicontroller = new GajiPegawaiController(gajipegawaidao, gajipegawaiview, gajipegawaimodel);
+}
